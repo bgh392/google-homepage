@@ -2,27 +2,52 @@
 <html>
 <head>
 <style>
-div{
-    display: flex;
-    justify-content: center;
-}#logo {
-    display: flex;
-    height: 500px;
+
+#center {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+
 }
 
-
-
-
+.logo {
+    grid-column: 1/4;
+    Grid-row: 2/3;
+    justify-self: center;
+}
+.input {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    justify-self: center;
+}
+.button {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    justify-self: start;
+    
+}
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+}
 </style>
+<body>
 
 </head>
-<div id="logo">
-
+<div id="center">
+<div class="logo">
 <img src="images/Foogle.png">
-<input>
-</input>
 </div>
 
+<div class="input">
+<input size="40">
+</input>
+</div>
+<div class="button">
+<button>Search</button>
 
-
+        </div>
+</div>
+</body>
 </html>
