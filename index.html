@@ -2,52 +2,81 @@
 <html>
 <head>
 <style>
-
-#center {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    position: relative;
-
+body {
+    background-color: rgb(255, 255, 255)
 }
+
+
+
 
 .logo {
-    grid-column: 1/4;
-    Grid-row: 2/3;
-    justify-self: center;
+    text-align: center;
+    margin-top: 10%;
+   
+}
+.logo img{
+    max-height: 100px;
 }
 .input {
-    grid-column: 1/4;
-    grid-row: 3/4;
-    justify-self: center;
-}
-.button {
-    grid-column: 2/4;
-    grid-row: 3/4;
-    justify-self: start;
+    text-align: center;
     
 }
-body {
-    min-height: 100vh;
-    min-width: 100vw;
+
+.search-functions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+   
 }
+.button {
+    padding: 5px; 
+}
+
+#left:hover {
+    text-decoration: underline;
+}
+
+#left {
+    display: inline-block;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+}
+
 </style>
 <body>
 
 </head>
-<div id="center">
+
+<div id="top" style="position:fixed;background:white;width:100%;">
+    <a href="#About" id="left">About</a>
+    <a href="#Store" id="left">Store</a>
+    <a href="#Gmail" id="right">Gmail</a>
+    <a href="Images" id="right">Images</a>
+
 <div class="logo">
-<img src="images/Foogle.png">
-</div>
+        <img src="images/Foogle.png">
+            </div>
+<div class="search">
+        <div class="input">
+            <input type="text" size="40">
+                </input>
+                    </div>
 
-<div class="input">
-<input size="40">
-</input>
-</div>
+<div class="search-functions">
 <div class="button">
-<button>Search</button>
+        <button>Foogle Search</button>
 
+</div>
+
+
+<div class="button">
+    <button>I'm Feeling Lucky</button>
         </div>
+        </div>
+
 </div>
 </body>
 </html>
